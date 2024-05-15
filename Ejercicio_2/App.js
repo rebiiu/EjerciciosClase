@@ -50,7 +50,7 @@ const App = () => {
     const nuevoAlumno = { id: idCounter, nombre: nombre, carnet: carnet, colorFav: colorFav, fechaReserva: fechaReserva, persoReserva: personaReserva };
     // Agrega el nuevo cliente a la lista de clientes
     setAlumnos([...alumno, nuevoAlumno]);
-
+    // Incrementa el contador de ID
     setIdCounter(idCounter + 1);
     // Limpia los campos de entrada
     setNombre('');
@@ -212,4 +212,5 @@ const styles = StyleSheet.create({
   },
 });
  
+//hecho por rebeca
 export default App;
